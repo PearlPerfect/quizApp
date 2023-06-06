@@ -1,0 +1,79 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background:#001e4d;
+
+}
+
+.quizApp{
+    background: wheat;
+    width: 90%;
+    max-width: 600px;
+    margin: 100px auto 0;
+    padding: 20px;
+    border-radius: 5px;
+}
+h1{
+    text-align: center;
+    text-transform: capitalize;
+    color: #001e4d;
+    border-bottom: 1px solid royalblue;
+    padding-bottom: 20px;
+}
+
+h2{
+    color: #001e4d;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 30px;
+}
+
+.btn{
+    width: 100%;
+    border-radius: 4px;
+    text-align: left;
+    background: #fff;
+    margin: 10px 0;
+    border: 1px solid #222;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 20px;
+    transition: all 0.3ms;
+}
+.btn:hover:not([disabled]){/* hover is effective it has not been disabled*/
+    background-color: #222;
+    color: #fff;
+}
+
+.btn:disabled{
+    cursor: no-drop;
+}
+#nextQuestion{
+    padding: 10px 20px;
+    border-radius: 4px;
+    border: 0;
+    outline: 0;
+    background: #222;
+    color: #fff;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3ms;
+    display: none;
+    margin: 10px auto 0;
+    /* visibility: hidden; */
+}
+
+#nextQuestion:hover{
+    background: #001e4d;
+}
+
+.correct{
+    background: #9aeabc;
+}
+.incorrect{
+    background: #ff9393;
+}
